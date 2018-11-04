@@ -1,0 +1,514 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "restaurant assistant",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "i am not sure what to say",
+                        "i am not sure how to use this app",
+                        "how to proceed",
+                        "how can i proceed",
+                        "what to say",
+                        "what should i do",
+                        "please help",
+                        "help",
+                        "i need some help",
+                        "i need help",
+                        "What should i say",
+                        "tell me what to do",
+                        "how do you work",
+                        "i am not sure what to do next",
+                        "i don't understand",
+                        "What should i do",
+                        "what should i speak",
+                        "how can i talk to you",
+                        "can you help me",
+                        "how can you help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "how are you",
+                        "what's up",
+                        "hi",
+                        "good evening",
+                        "good morning",
+                        "hello",
+                        "hey there",
+                        "howdy",
+                        "hey"
+                    ]
+                },
+                {
+                    "name": "ByeIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes",
+                        "you're a lifesaver...thanks",
+                        "that sounds great..thanks",
+                        "just what i was looking for",
+                        "that's it for now",
+                        "thank you very much",
+                        "thanks buddy",
+                        "thank you",
+                        "Thanks bye",
+                        "Great choice thanks",
+                        "have a good day",
+                        "have a good one",
+                        "farewell",
+                        "end",
+                        "stop",
+                        "good bye",
+                        "goodbye",
+                        "bye",
+                        "okay"
+                    ]
+                },
+                {
+                    "name": "DenyIntent",
+                    "slots": [],
+                    "samples": [
+                        "Are you sure there's nothing else",
+                        "Can't you find something better",
+                        "suggest something else",
+                        "i don't like this place",
+                        "Umm..not really",
+                        "Ugh..no",
+                        "not quite to my taste",
+                        "not in the mood for that one",
+                        "I went there last time...it was not good",
+                        "Somewhere else...perhaps",
+                        "I don't like this one..it's too expensive",
+                        "not quite what I'm looking for",
+                        "not this one",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "SearchIntent",
+                    "slots": [
+                        {
+                            "name": "Price",
+                            "type": "price"
+                        },
+                        {
+                            "name": "Cuisine",
+                            "type": "cuisine"
+                        },
+                        {
+                            "name": "Alcohol",
+                            "type": "alcohol"
+                        },
+                        {
+                            "name": "Smoking",
+                            "type": "smoking"
+                        }
+                    ],
+                    "samples": [
+                        "suggest someplace i can get a {Cuisine}",
+                        "I need a {Cuisine} after my run",
+                        "I want to have a light {Cuisine}",
+                        "somewhere for {Cuisine}",
+                        "It's movie night..so we want {Cuisine}",
+                        "show me somewhere {Price}",
+                        "find me somewhere {Price}",
+                        "find me someplace {Price}",
+                        "show me someplace {Price}",
+                        "tell me somewhere {Price}",
+                        "tell me someplace {Price}",
+                        "someplace {Price}",
+                        "somewhere {Price}",
+                        "find me someplace to {Smoking}",
+                        "show me someplace to {Smoking}",
+                        "find me somewhere with {Smoking}",
+                        "show me somewhere with {Smoking}",
+                        "tell me someplace to {Smoking}",
+                        "tell me somewhere with {Smoking}",
+                        "someplace to {Smoking}",
+                        "somewhere with {Smoking}",
+                        "somehwere to {Smoking}",
+                        "i'm trying to quit smoking...so {Smoking}",
+                        "we are going out for {Alcohol}",
+                        "me and the boys are going out for {Alcohol}",
+                        "anywhere that serves {Alcohol}",
+                        "find me anywhere that serves {Alcohol}",
+                        "show me anywhere that serves {Alcohol}",
+                        "tell me anywhere that serves {Alcohol}",
+                        "anywhere with {Alcohol}",
+                        "show me anywhere with {Alcohol}",
+                        "find me anywhere with {Alcohol}",
+                        "tell me anywhere with {Alcohol}",
+                        "somewhere with {Alcohol}",
+                        "show me somewhere with {Alcohol}",
+                        "find me somewhere with {Alcohol}",
+                        "tell me somewhere with {Alcohol}",
+                        "somewhere that serves {Alcohol}",
+                        "show me somewhere that serves {Alcohol}",
+                        "find me somewhere that serves {Alcohol}",
+                        "tell me somewhere that serves {Alcohol}",
+                        "get me someplace with {Alcohol}",
+                        "show me someplace that serves {Alcohol}",
+                        "find me someplace that serves {Alcohol}",
+                        "tell me someplace that serves {Alcohol}",
+                        "show me someplace with {Alcohol}",
+                        "find me someplace with {Alcohol}",
+                        "tell me someplace with {Alcohol}",
+                        "i'm trying to quit drinking...so {Alcohol}",
+                        "I am in the mood for some {Cuisine} food",
+                        "I am in the mood for some {Cuisine}",
+                        "I want to have {Cuisine}",
+                        "I want to have {Cuisine} food",
+                        "{Cuisine} spot",
+                        "find me a {Cuisine} spot",
+                        "show me a {Cuisine} spot",
+                        "tell me a {Cuisine} spot",
+                        "{Cuisine} place",
+                        "find me a {Cuisine} place",
+                        "show me a {Cuisine} place",
+                        "tell me a {Cuisine} place",
+                        "{Cuisine} restaurant",
+                        "find me a {Cuisine} restaurant",
+                        "show me a {Cuisine} restaurant",
+                        "tell me a {Cuisine} restaurant",
+                        "i am looking for a {Cuisine} place",
+                        "i am looking for a {Cuisine} spot",
+                        "i am looking for a {Cuisine} restaurant",
+                        "show me a {Cuisine} place",
+                        "show me {Cuisine} restaurants",
+                        "i want to have some {Cuisine} food",
+                        "i want to have some {Cuisine}",
+                        "show me some {Cuisine} restaurnats",
+                        "i feel like having some {Cuisine} food",
+                        "i feel like having some {Cuisine}",
+                        "search for restaurants",
+                        "I'm looking for a {Price} {Cuisine}",
+                        "I want to grab a quick bite to eat..something {Price}",
+                        "An {Price} restaurant",
+                        "A place to eat...somewhere {Price}",
+                        "Get me a restaurant..somewhere {Price}",
+                        "i am searching for a {Cuisine} spot",
+                        "How about some {Cuisine}",
+                        "some food sounds great",
+                        "feeling like eating",
+                        "thinking of getting something to eat",
+                        "i am hungry",
+                        "i want to have {Cuisine}",
+                        "i want to have some food",
+                        "i want to grab some {Cuisine}",
+                        "i'm looking for a place to eat"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "price",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "high",
+                                "synonyms": [
+                                    "posh",
+                                    "flashy",
+                                    "high budget",
+                                    "exquisite",
+                                    "exotic",
+                                    "high priced",
+                                    "high price",
+                                    "expensive",
+                                    "fancy",
+                                    "pull out all the stops",
+                                    "no budget",
+                                    "go all out"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium",
+                                "synonyms": [
+                                    "not too expensive",
+                                    "decent",
+                                    "normal",
+                                    "average",
+                                    "not too pricey",
+                                    "not too shabby"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "low",
+                                "synonyms": [
+                                    "not expensive",
+                                    "low budget",
+                                    "inexpensive",
+                                    "low priced",
+                                    "low price",
+                                    "cheap",
+                                    "less pricey",
+                                    "not too flashy"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cuisine",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "contemporary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cafe-coffee_shop",
+                                "synonyms": [
+                                    "cafe",
+                                    "coffee"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mediterranean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "breakfast-brunch",
+                                "synonyms": [
+                                    "lunch",
+                                    "breakfast",
+                                    "brunch"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bakery",
+                                "synonyms": [
+                                    "pastry",
+                                    "cake",
+                                    "bread"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "burgers",
+                                "synonyms": [
+                                    "burger",
+                                    "burger and fries"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "game",
+                                "synonyms": [
+                                    "venison",
+                                    "rabbit"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "international"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "family",
+                                "synonyms": [
+                                    "with the kids",
+                                    "the whole family"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fast_food",
+                                "synonyms": [
+                                    "street food"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "regional"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pizzeria",
+                                "synonyms": [
+                                    "pizza"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "american"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cafeteria",
+                                "synonyms": [
+                                    "cafe",
+                                    "coffee"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bar_pub_brewery",
+                                "synonyms": [
+                                    "pub"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "japanese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "italian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seafood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chinese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mexican"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vietnamese"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "alcohol",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no booze",
+                                "synonyms": [
+                                    "dry place",
+                                    "no liquor",
+                                    "no drinks",
+                                    "no alcohol",
+                                    "sober"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "booze",
+                                "synonyms": [
+                                    "liquor",
+                                    "drinks",
+                                    "alcohol"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "smoking",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "section",
+                                "synonyms": [
+                                    "smoking permitted in a section",
+                                    "section for smoking",
+                                    "section to smoke",
+                                    "different section to smoke",
+                                    "different section for smoking"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no smoking",
+                                "synonyms": [
+                                    "smoking not permitted",
+                                    "smoking not allowed",
+                                    "no smoke"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smoking",
+                                "synonyms": [
+                                    "smoking permitted",
+                                    "smoking allowed",
+                                    "smoke"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

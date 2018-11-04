@@ -1,0 +1,1799 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "medic bot",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MedicalConditionSearch",
+                    "slots": [
+                        {
+                            "name": "Problem",
+                            "type": "Problem"
+                        },
+                        {
+                            "name": "Gender",
+                            "type": "Gender"
+                        },
+                        {
+                            "name": "Year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "I am a {Gender} born in {Year}",
+                        "I have a {Problem}",
+                        "I am {Gender} born in {Year}",
+                        "I have been diagnosed with {Problem}",
+                        "i am diagnosed with {Problem}",
+                        "I am feeling {Problem}",
+                        "I am {Problem}",
+                        "{Gender} {Year}",
+                        "i am getting {Problem}",
+                        "getting {Problem}",
+                        "i keep {Problem}",
+                        "i am breaking out {Problem}",
+                        "my {Problem}",
+                        "{Problem} does not feel right",
+                        "{Problem} does not feel normal",
+                        "{Problem} ",
+                        "i am passing {Problem}",
+                        "i am not able to {Problem} properly",
+                        "i'm not able to {Problem}",
+                        "i have been {Problem}",
+                        "i can't {Problem}",
+                        "i am unable to {Problem}",
+                        "continuous {Problem}",
+                        "{Problem} continuously",
+                        "i can't stop {Problem}",
+                        "i have been {Problem} for a long time",
+                        "i have {Problem}",
+                        "i am experiencing {Problem}",
+                        "i am having {Problem}"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes of course",
+                        "yup",
+                        "yeah",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "nope",
+                        "that's alright thanks",
+                        "not at all",
+                        "nah",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "ByeIntent",
+                    "slots": [],
+                    "samples": [
+                        "you are a lifesaver",
+                        "thanks a lot",
+                        "that's alright",
+                        "that's alright bye",
+                        "thanks bye",
+                        "stop",
+                        "bye"
+                    ]
+                },
+                {
+                    "name": "DirectTreatment",
+                    "slots": [
+                        {
+                            "name": "Problem",
+                            "type": "Problem"
+                        },
+                        {
+                            "name": "Gender",
+                            "type": "Gender"
+                        },
+                        {
+                            "name": "Year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "I want to know treatment for {Problem}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Problem",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Abdominal guarding",
+                                "synonyms": [
+                                    "abdomen feels tightened"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abdominal pain",
+                                "synonyms": [
+                                    "abdomen is paining",
+                                    "pain in the abdomen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abdominal pain associated with menstruation",
+                                "synonyms": [
+                                    "abdomen is paining because of periods",
+                                    "pain in the abdomen due to periods",
+                                    "pain in the abdomen during periods",
+                                    "abdominal pain during periods",
+                                    "abdominal pain due to periods"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Absence of a pulse",
+                                "synonyms": [
+                                    "no pulse",
+                                    "can't find a pulse"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aggressiveness",
+                                "synonyms": [
+                                    "aggressive",
+                                    "violent"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Agitation",
+                                "synonyms": [
+                                    "irritated",
+                                    "agitated",
+                                    "restless"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ankle deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ankle swelling",
+                                "synonyms": [
+                                    "swollen ankle"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety",
+                                "synonyms": [
+                                    "worried",
+                                    "anxious",
+                                    "worry"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arm pain",
+                                "synonyms": [
+                                    "pain in the arm",
+                                    "pain in my arm",
+                                    "arm pains",
+                                    "arm is paining"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arm swelling",
+                                "synonyms": [
+                                    "swollen arm",
+                                    "arm is swollen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Back deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Back pain",
+                                "synonyms": [
+                                    "back pains",
+                                    "pain in my back",
+                                    "pain in the back",
+                                    "back is paining"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Black stools"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blackening of vision",
+                                "synonyms": [
+                                    "see black",
+                                    "black vision",
+                                    "can't see"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blackhead",
+                                "synonyms": [
+                                    "zit"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bleeding from vagina",
+                                "synonyms": [
+                                    "bleeding in vagina",
+                                    "vagina is bleeding"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bleeding in the conjunctiva of the eye",
+                                "synonyms": [
+                                    "eye is bleeding"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bloated feeling in the stomach",
+                                "synonyms": [
+                                    "stomach is swollen",
+                                    "stomach is bloated",
+                                    "stomach feels bloated"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blood in stool",
+                                "synonyms": [
+                                    "blood in poop"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bloody cough",
+                                "synonyms": [
+                                    "blood in cough",
+                                    "blood while coughing"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blue colored skin",
+                                "synonyms": [
+                                    "skin is bluish in colour",
+                                    "skin is turning blue",
+                                    "blue skin",
+                                    "skin is blue"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blue spot on skin",
+                                "synonyms": [
+                                    "bluish spot",
+                                    "blue spot"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blurred vision",
+                                "synonyms": [
+                                    "eyesight is hazy",
+                                    "hazy vision",
+                                    "vision is blurred",
+                                    "blurry vision"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bold area among hair on the head",
+                                "synonyms": [
+                                    "bald patches on the head",
+                                    "going bald in patches",
+                                    "bald patches"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bone fracture",
+                                "synonyms": [
+                                    "bone got fractured",
+                                    "bone is fractured",
+                                    "fracture in the bone"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Breathing-related pains",
+                                "synonyms": [
+                                    "breathing is painful",
+                                    "pain while breathing",
+                                    "breathe properly"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brittleness of nails",
+                                "synonyms": [
+                                    "nails break easily",
+                                    "nails are breaking easily",
+                                    "nails are brittle"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bulging abdominal wall",
+                                "synonyms": [
+                                    "abdomen is swelling",
+                                    "abdomen is swollen ",
+                                    "abdomen feels swollen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Burning eyes",
+                                "synonyms": [
+                                    "burning sensation in the eyes",
+                                    "eyes are burning"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Burning in the throat",
+                                "synonyms": [
+                                    "burning sensation in the throat",
+                                    "throat is burning"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Burning nose",
+                                "synonyms": [
+                                    "burning sensation in the nose",
+                                    "nose is burning"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Burning sensation when urinating",
+                                "synonyms": [
+                                    "burning sensation while urinating"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Changes in the nails"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cheek swelling",
+                                "synonyms": [
+                                    "swelling in the cheek",
+                                    "cheek feels swollen",
+                                    "cheek is swollen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chest pain",
+                                "synonyms": [
+                                    "chest pains",
+                                    "pain in my chest",
+                                    "pain in the chest",
+                                    "chest is paining"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chest tightness",
+                                "synonyms": [
+                                    "feeling of tightness in the chest",
+                                    "tightness in the chest",
+                                    "chest feels tight"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chills"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coarsening of the skin structure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cold feet",
+                                "synonyms": [
+                                    "feet are feeling cold",
+                                    "feet feel cold",
+                                    "feet are cold"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cold hands",
+                                "synonyms": [
+                                    "hands are feeling cold",
+                                    "hands are cold"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cold sweats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cough",
+                                "synonyms": [
+                                    "coughing"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cough with sputum",
+                                "synonyms": [
+                                    "coughing with phlegm"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cramps"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cravings"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Crusting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Curvature of the spine",
+                                "synonyms": [
+                                    "spine feels curved"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dark urine",
+                                "synonyms": [
+                                    "urine is dark",
+                                    "urine is a dark colour",
+                                    "colour of urine is dark"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Decreased urine stream",
+                                "synonyms": [
+                                    "urinate properly",
+                                    "less urine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Delayed start to urination",
+                                "synonyms": [
+                                    "have to wait before urinating",
+                                    "urinate immediately"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diarrhea",
+                                "synonyms": [
+                                    "defecation",
+                                    "stop defecating",
+                                    "going to the bathroom",
+                                    "defecating",
+                                    "loose motion"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficult defecation",
+                                "synonyms": [
+                                    "defecate"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty in finding words",
+                                "synonyms": [
+                                    "can't think of words",
+                                    "lost for words"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty in speaking",
+                                "synonyms": [
+                                    "speak",
+                                    "speak properly"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty in swallowing",
+                                "synonyms": [
+                                    "swallow",
+                                    "swallow properly"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty to concentrate",
+                                "synonyms": [
+                                    "pay attention",
+                                    "concentrate",
+                                    "focus"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty to learn",
+                                "synonyms": [
+                                    "learn properly"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Difficulty with gait",
+                                "synonyms": [
+                                    "walk properly"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discoloration of nails",
+                                "synonyms": [
+                                    "nails are discoloured",
+                                    "nails are getting discoloured "
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Disorientation regarding time or place",
+                                "synonyms": [
+                                    "losing track of time",
+                                    "can't keep track of time"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Distended abdomen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dizziness",
+                                "synonyms": [
+                                    "dizzy"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Double vision"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Double vision, acute-onset"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dribbling after urination"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Drooping eyelid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Drowsiness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dry eyes",
+                                "synonyms": [
+                                    "eyes are dry"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dry mouth",
+                                "synonyms": [
+                                    "mouth is feeling dry"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dry skin",
+                                "synonyms": [
+                                    "skin feels dry",
+                                    "skin is dry"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Earache",
+                                "synonyms": [
+                                    "pain in the ear",
+                                    "ear is aching"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Early satiety"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Elbow pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Enlarged calf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eye blinking"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eye pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eye redness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eyelid swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eyelids sticking together"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Face pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Facial paralysis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Facial swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fast, deepened breathing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fatty defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Feeling faint"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Feeling of foreign body in the eye"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Feeling of pressure in the ear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Feeling of residual urine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Feeling of tension in the legs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fever"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Finger deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Finger pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Finger swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flaking skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flaking skin on the head"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flatulence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foot pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foot swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Forgetfulness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Formation of blisters on a skin area"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foul smelling defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frequent urination"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Genital warts"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hair loss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hallucination"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Halo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hand pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hand swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hard defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hardening of the skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Headache"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hearing loss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heart murmur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heartburn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hiccups"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hip deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hip pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hoarseness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hot flushes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Immobilization"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Impaired balance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Impaired hearing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Impaired light-dark adaptation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Impairment of male potency"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Incomplete defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased appetite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased drive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased salivation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased thirst"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased touch sensitivity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Increased urine quantity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Involuntary movements"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Irregular heartbeat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Irregular mole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching eyes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching in the ear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching in the mouth or throat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching in the nose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching of skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching of the anus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching on head"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itching or burning in the genital area"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joint effusion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joint instability"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joint pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joint redness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joint swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joylessness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Knee deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Knee pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leg cramps"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leg pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leg swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leg ulcer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Less than 3 defecations per week"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limited mobility of the ankle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limited mobility of the back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limited mobility of the fingers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limited mobility of the hip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limited mobility of the leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lip swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lockjaw"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Loss of eye lashes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lower abdominal pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lower-back pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lump in the breast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Malposition of the testicles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marked veins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Memory gap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Menstruation disorder"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Missed period"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Moist and softened skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mood swings"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Morning stiffness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mouth pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mouth ulcers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscle pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscle stiffness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscle weakness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscular atrophy in the leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscular atrophy of the arm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscular weakness in the arm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muscular weakness in the leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nausea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neck pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neck stiffness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nervousness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Night cough"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Night sweats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Non-healing skin wound"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nosebleed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Numbness in the arm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Numbness in the leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Numbness of the hands"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oversensitivity to light"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Overweight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain in the bones"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain in the calves"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain in the limbs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain of the anus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain on swallowing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain radiating to the arm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain radiating to the leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pain when chewing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Painful defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Painful urination"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pallor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Palpitations"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Paralysis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Physical inactivity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Problems with the sense of touch in the face"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Problems with the sense of touch in the feet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Protrusion of the eyes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Purulent discharge from the urethra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Purulent discharge from the vagina"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rebound tenderness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Reduced appetite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ringing in the ear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Runny nose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sadness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scalp redness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sensitivity to cold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sensitivity to glare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sensitivity to noise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shiny red tongue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shortness of breath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Side pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin lesion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin nodules"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin rash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin redness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin thickening"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin wheal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sleepiness with spontaneous falling asleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sleeplessness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sneezing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sore throat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sputum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stomach burning"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stress-related leg pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stuffy nose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sweating"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swelling in the genital area"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swelling of the testicles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swollen glands in the armpit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swollen glands in the groin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swollen glands in the neck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tears"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Testicular pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tingling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tiredness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Toe deformity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Toe swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tongue burning"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tongue swelling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Toothache"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tremor at rest"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tremor on movement"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Trouble understanding speech"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Unconsciousness, short"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Uncontrolled defecation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Underweight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urge to urinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urination during the night"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vision impairment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vision impairment for far objects"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vision impairment for near objects"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Visual field loss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vomiting",
+                                "synonyms": [
+                                    "throwing up",
+                                    "puking"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vomiting blood",
+                                "synonyms": [
+                                    "blood in vomit"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Weakness or numbness on right or left side of body"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Weight gain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Weight loss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wheezing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wound"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yellow colored skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yellowish discoloration of the white part of the eye"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Gender",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "female"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
